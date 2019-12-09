@@ -155,7 +155,7 @@
             .filter-2 .master-filter__a {
                 width: 50%;
             }
-            .master-filter__a.active {
+            .master-filter__a[aria-selected="true"] {
                 font-weight: 700;
                 color: #673ab7;
                 background-color: #fff;
@@ -268,13 +268,17 @@
                 line-height: 20px;
                 font-size: 12px;
             }
-            .seat-content > li {
+            .seat-content > button {
                 background-color: #ccc;
                 float: left;
                 border: 1px solid #fff;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                font-size: 12px;
             }
-            .seat-content > li:hover,
-            .seat-content > li.active {
+            .seat-content > button:hover,
+            .seat-content > button.active {
                 background-color: rgba(0,0,0,.65)!important
             }
         </style>
